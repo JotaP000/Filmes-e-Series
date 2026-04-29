@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+header {
+    background: darkred;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #f3f3f3;
+    padding: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+.Voltar a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: darkred;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.titulo_contato {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.missao {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 3px solid darkred;
+}
+
+.missao h2 {
+    color: darkred;
+    margin-bottom: 15px;
+}
+
+.missao p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+  background-color: red;
+  width: 100%;
+  padding: 0.5% 0 0.1% 0;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: darkred;
+}
+
+.redes a img {
+  margin-left: 13%;
+  box-shadow: none;
+  padding-bottom: 0.5%;
+  background-color: darkred;
+}
+
+.redes a {
+  text-decoration: none;
+  background-color: darkred;
+}
+
+.contato {
+  background-color: darkred;
+  padding: 0.5%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contato > p {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+.titulo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.direitos {
+  color: white;
+  text-align: center;
+}
+
+.container > form {
+    margin-bottom: 10rem;
+    margin-top: 1.5rem;
+}
+
+.titulo_contato {
+    margin-top: 10rem;
+}
+
+@media (max-width: 1024px) {
+
+.grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header {
+    text-align: center;
+    font-size: 22px;
+}
+
+nav {
+    gap: 15px;
+}
+
+.container {
+    padding: 30px 15px;
+}
+
+.missao p {
+    font-size: 15px;
+}
+
+.contato {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.titulo {
+    font-size: 1.2rem;
+}
+}
+
+@media (max-width: 768px) {
+
+.grid {
+    grid-template-columns: 1fr;
+}
+
+header {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+}
+
+.container {
+    padding: 20px 10px;
+}
+
+.card p {
+    font-size: 13px;
+}
+
+.titulo_contato {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+form {
+    width: 100%;
+    padding: 0 10px;
+}
+
+input, textarea {
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+}
+
+
+.track img {
+    width: 120px;
+}
+
+.missao {
+    padding: 30px 15px;
+}
+
+.missao p {
+    font-size: 14px;
+}
+
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.redes a img {
+    width: 28px;
+}
+
+.contato {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.titulo {
+    font-size: 1rem;
+}
+
+.contato > p {
+    font-size: 0.7rem;
+}
+}
